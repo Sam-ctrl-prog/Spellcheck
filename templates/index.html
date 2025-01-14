@@ -34,6 +34,10 @@
     <textarea id="sentence" placeholder="Type a sentence..."></textarea>
     <button onclick="checkSpelling()">Check Spelling</button>
     <div class="result" id="result"></div>
+<form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" accept=".txt, .docx">
+    <button type="submit">Upload and Check</button>
+</form>
 
     <script>
         async function checkSpelling() {
